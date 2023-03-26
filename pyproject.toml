@@ -1,0 +1,21 @@
+[build-system]
+requires = ["setuptools >= 65.0"]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "receipts"
+version = "0.0.1"
+description = "For parsing supermarket recipts"
+requires-python = ">=3.10"
+
+dependencies = [
+  "python-dotenv",
+  "selenium",
+  "pandas",
+  "lxml",
+  "pyarrow"
+]
+
+[project.scripts]
+scrape-coop = "receipts.scrape_coop:main"
+common-example = "receipts.scrape_coop:print_25_most_common"
