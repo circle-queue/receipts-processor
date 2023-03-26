@@ -13,7 +13,7 @@ DataFrame[
 
 ## Installation
 ```
-git clone receipts-processor
+git clone https://github.com/circle-queue/receipts-processor.git
 cd receipts-processor
 python -m venv venv
 pip install -e .
